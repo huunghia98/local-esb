@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="MessageListener" groupId="com.afs.inbound-endpoint" version="1.0.0" type="synapse/inbound-endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/inbound-endpoints/MessageListener.xml</file>
+    </artifact>
+    <artifact name="Sequence" groupId="com.afs.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/Sequence.xml</file>
+    </artifact>
+    <artifact name="SpringLocal" groupId="com.afs.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/SpringLocal.xml</file>
+    </artifact>
+    <artifact name="fault" groupId="com.afs.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/fault.xml</file>
+    </artifact>
+    <artifact name="PingLocal" groupId="com.afs.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PingLocal.xml</file>
+    </artifact>
+    <artifact name="PingLocal_swagger" groupId="com.afs.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PingLocal_swagger.yaml</file>
+    </artifact>
+    <artifact name="PingLocal_metadata" groupId="com.afs.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PingLocal_metadata.yaml</file>
+    </artifact>
+    <artifact name="LocalPing" groupId="com.afs.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/LocalPing.xml</file>
+    </artifact>
+</artifacts>

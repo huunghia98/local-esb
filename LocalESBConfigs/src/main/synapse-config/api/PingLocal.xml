@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/iso" name="PingLocal" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/ping">
+        <inSequence>
+            <clone>
+                <target>
+                    <sequence>
+                        <call>
+                            <endpoint key="LocalPing"/>
+                        </call>
+                    </sequence>
+                </target>
+                <target>
+                    <sequence/>
+                </target>
+            </clone>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

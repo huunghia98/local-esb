@@ -1,0 +1,11 @@
+---
+key: "PingLocal-1.0.0"
+name : "PingLocal"
+displayName : "PingLocal"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/iso/ping"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

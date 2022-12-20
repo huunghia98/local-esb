@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inboundEndpoint class="org.wso2.carbon.inbound.iso8583.listening.ISO8583MessageConsumer" name="MessageListener" onError="fault" sequence="Sequence" suspend="false" xmlns="http://ws.apache.org/ns/synapse">
+    <parameters>
+        <parameter name="inbound.behavior">listening</parameter>
+        <parameter name="sequential">true</parameter>
+        <parameter name="coordination">true</parameter>
+        <parameter name="port">5000</parameter>
+        <parameter name="isProxy">false</parameter>
+        <parameter name="interval">1000</parameter>
+        <parameter name="class">org.wso2.carbon.inbound.iso8583.listening.ISO8583MessageConsumer</parameter>
+    </parameters>
+</inboundEndpoint>

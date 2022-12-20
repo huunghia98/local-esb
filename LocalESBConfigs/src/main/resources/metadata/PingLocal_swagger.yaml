@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: PingLocal
+  description: API Definition of PingLocal
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/iso
+paths:
+  /ping:
+    get:
+      responses:
+        default:
+          description: Default response
