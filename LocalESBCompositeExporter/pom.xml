@@ -16,6 +16,7 @@
   <properties>
     <com.afs.sequence_._fault>capp/EnterpriseServiceBus</com.afs.sequence_._fault>
     <com.afs.api_._PingLocal>capp/EnterpriseServiceBus</com.afs.api_._PingLocal>
+    <com.afs.sequence_._Test>capp/EnterpriseServiceBus</com.afs.sequence_._Test>
     <com.afs.lib_._iso8583-connector>capp/EnterpriseServiceBus</com.afs.lib_._iso8583-connector>
     <com.afs.sequence_._Sequence>capp/EnterpriseServiceBus</com.afs.sequence_._Sequence>
     <com.afs.endpoint_._LocalPing>capp/EnterpriseServiceBus</com.afs.endpoint_._LocalPing>
@@ -61,6 +62,12 @@
     <dependency>
       <groupId>com.afs.api</groupId>
       <artifactId>PingLocal</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.afs.sequence</groupId>
+      <artifactId>Test</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
     </dependency>
