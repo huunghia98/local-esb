@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/connect" name="ISOConnect" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/iso">
+        <inSequence>
+            <log category="DEBUG" description="log incoming" level="full"/>
+            <iso8583.init>
+                <serverHost>localhost</serverHost>
+                <serverPort>5010</serverPort>
+            </iso8583.init>
+            <iso8583.sendMessage/>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <log category="DEBUG" description="response log" level="full"/>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

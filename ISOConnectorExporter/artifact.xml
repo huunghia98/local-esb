@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="iso8583-connector" groupId="com.afs.lib" version="1.0.3" type="synapse/lib" serverRole="EnterpriseServiceBus">
+        <file>iso8583-connector-1.0.3.zip</file>
+    </artifact>
+</artifacts>

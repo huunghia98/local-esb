@@ -9,6 +9,7 @@
   <name>LocalESB</name>
   <description>LocalESB</description>
   <modules>
+    <module>ISOConnectorExporter</module>
     <module>LocalESBConfigs</module>
     <module>LocalESBCompositeExporter</module>
   </modules>

@@ -14,14 +14,18 @@
   <name>LocalESBCompositeExporter</name>
   <description>LocalESBCompositeExporter</description>
   <properties>
-    <com.afs.inbound-endpoint_._MessageListener>capp/EnterpriseServiceBus</com.afs.inbound-endpoint_._MessageListener>
     <com.afs.sequence_._fault>capp/EnterpriseServiceBus</com.afs.sequence_._fault>
-    <com.afs.metadata_._PingLocal_swagger>capp/EnterpriseServiceBus</com.afs.metadata_._PingLocal_swagger>
     <com.afs.api_._PingLocal>capp/EnterpriseServiceBus</com.afs.api_._PingLocal>
-    <com.afs.endpoint_._SpringLocal>capp/EnterpriseServiceBus</com.afs.endpoint_._SpringLocal>
+    <com.afs.lib_._iso8583-connector>capp/EnterpriseServiceBus</com.afs.lib_._iso8583-connector>
     <com.afs.sequence_._Sequence>capp/EnterpriseServiceBus</com.afs.sequence_._Sequence>
-    <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
     <com.afs.endpoint_._LocalPing>capp/EnterpriseServiceBus</com.afs.endpoint_._LocalPing>
+    <com.afs.inbound-endpoint_._MessageListener>capp/EnterpriseServiceBus</com.afs.inbound-endpoint_._MessageListener>
+    <com.afs.api_._ISOConnect>capp/EnterpriseServiceBus</com.afs.api_._ISOConnect>
+    <com.afs.metadata_._PingLocal_swagger>capp/EnterpriseServiceBus</com.afs.metadata_._PingLocal_swagger>
+    <com.afs.metadata_._ISOConnect_metadata>capp/EnterpriseServiceBus</com.afs.metadata_._ISOConnect_metadata>
+    <com.afs.metadata_._ISOConnect_swagger>capp/EnterpriseServiceBus</com.afs.metadata_._ISOConnect_swagger>
+    <com.afs.endpoint_._SpringLocal>capp/EnterpriseServiceBus</com.afs.endpoint_._SpringLocal>
+    <artifact.types>jaggery/app=zip,synapse/priority-executor=xml,synapse/inbound-endpoint=xml,service/rule=aar,synapse/message-store=xml,event/stream=json,service/meta=xml,datasource/datasource=xml,synapse/proxy-service=xml,bpel/workflow=zip,synapse/sequence=xml,synapse/endpointTemplate=xml,carbon/application=car,wso2/gadget=dar,synapse/api=xml,synapse/event-source=xml,synapse/message-processors=xml,event/receiver=xml,lib/dataservice/validator=jar,synapse/template=xml,synapse/endpoint=xml,lib/carbon/ui=jar,lib/synapse/mediator=jar,synapse/metadata=yaml,event/publisher=xml,synapse/local-entry=xml,synapse/task=xml,webapp/jaxws=war,registry/resource=zip,synapse/configuration=xml,service/axis2=aar,synapse/lib=zip,synapse/sequenceTemplate=xml,event/execution-plan=siddhiql,service/dataservice=dbs,web/application=war,lib/library/bundle=jar</artifact.types>
   </properties>
   <dependencies>
     <dependency>
@@ -37,8 +41,20 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.afs.api</groupId>
+      <artifactId>ISOConnect</artifactId>
+      <version>1.0.0</version>
+      <type>xml</type>
+    </dependency>
+    <dependency>
       <groupId>com.afs.metadata</groupId>
       <artifactId>PingLocal_swagger</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.afs.metadata</groupId>
+      <artifactId>ISOConnect_metadata</artifactId>
       <version>1.0.0</version>
       <type>yaml</type>
     </dependency>
@@ -49,10 +65,22 @@
       <type>xml</type>
     </dependency>
     <dependency>
+      <groupId>com.afs.metadata</groupId>
+      <artifactId>ISOConnect_swagger</artifactId>
+      <version>1.0.0</version>
+      <type>yaml</type>
+    </dependency>
+    <dependency>
       <groupId>com.afs.endpoint</groupId>
       <artifactId>SpringLocal</artifactId>
       <version>1.0.0</version>
       <type>xml</type>
+    </dependency>
+    <dependency>
+      <groupId>com.afs.lib</groupId>
+      <artifactId>iso8583-connector</artifactId>
+      <version>1.0.3</version>
+      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>com.afs.sequence</groupId>

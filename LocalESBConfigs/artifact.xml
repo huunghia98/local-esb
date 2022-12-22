@@ -23,4 +23,13 @@
     <artifact name="LocalPing" groupId="com.afs.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/endpoints/LocalPing.xml</file>
     </artifact>
+    <artifact name="ISOConnect" groupId="com.afs.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ISOConnect.xml</file>
+    </artifact>
+    <artifact name="ISOConnect_swagger" groupId="com.afs.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ISOConnect_swagger.yaml</file>
+    </artifact>
+    <artifact name="ISOConnect_metadata" groupId="com.afs.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ISOConnect_metadata.yaml</file>
+    </artifact>
 </artifacts>
